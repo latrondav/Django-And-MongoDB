@@ -77,15 +77,26 @@ WSGI_APPLICATION = 'MDDProject.wsgi.application'
 
 DATABASES = {
     'default': {
+        # Default Database Connection
+
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
+
+        # Connecting To A Local MongoDB Database
 
         'ENGINE': 'djongo',
         'NAME': 'MDDDatabase',
         'CLIENT': {
             'host': 'localhost',
-            'port': 27017,
         }
+
+        # Connecting To A MongoDB Database Atlas Cluster
+
+        #'ENGINE': 'djongo',
+        #'NAME': 'MDDDatabase',
+        #'CLIENT': {
+        # 'host': 'mongodb+srv://MDDProjectCluster0User:<password>@mddprojectcluster0.e1dmifw.mongodb.net/test',
+        #}
     }
 }
 

@@ -14,3 +14,5 @@ Django And MongoDB Connection Using Djongo
     pip install pymongo==3.13.0
 
 4. Visit MongoDB Website To Download MongoDB to Your Machine
+
+5. To Use A Cluster Visit MongoDB.com and create a cluster, copy connection string and enjoy
